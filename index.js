@@ -64,13 +64,51 @@
 
 //console.log(lapsCompleted)
 let count = 0
+let saveEl = document.getElementById("save-el")
+let countEl = document.getElementById("count-el")
+
+console.log(countEl)
 
 function increment() {
-    console.log("clicked")
-    count = count + 1
-    console.log(count)
-    
+    //console.log("clicked")
+    count += 1
+    countEl.innerText = count
+    //document.getElementById("count-el").innerText = 5    
 }
+
+function save() {
+    let countStr = count + " - "
+    saveEl.textContent += countStr
+    console.log(count)
+
+}
+
+//let username = "per"
+//let message = "You have three new notifications."
+
+//let messageToUser = message +", "+ username +"!"
+//console.log(messageToUser)
+
+//let name = "Binoy"
+//let greeting = "Hi, my name is "
+
+//let myGreeting = greeting + name +"."
+//console.log(myGreeting)
+
+
+let welcomeEl = document.getElementById("welcome-el")
+let name = "Binoy"
+let greeting = "Welcome to the page"
+
+let displayp = greeting + ", " + name + "."
+document.getElementById("welcome-el").innerText = displayp
+
+welcomeEl.innerText += "👋🏻"
+
+
+
+
+
 
 
 
